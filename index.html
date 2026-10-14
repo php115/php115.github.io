@@ -1,0 +1,262 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title> Resume </title>
+	<link rel="icon" type="image/x-icon" href="./faveicon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	
+	<style>
+		* { box-sizing: border-box; } body { margin: 0; } img { display: block; max-width: 100%; }
+		html { font: 14px/1.2 system-ui; @media(width >= 700px) { font-size: 15px; }}
+		p { margin: 5px 0; }
+		.content { display: block; width: 700px; max-width: 100%; padding: 30px; margin: auto; }
+		.title-h1 { font-size: 22px; font-weight: 900; @media(width >= 700px) { font-size: 40px; }}
+		.title-h3 { font-size: 16px; font-weight: 900; @media(width >= 700px) { font-size: 20px; }}
+		.title-h2 { font-size: 20px; font-weight: 900; @media(width >= 700px) { font-size: 32px; }}
+		.title-h5 { font-size: 14px; font-weight: 700; text-transform: uppercase; @media(width >= 700px) { font-size: 14px; }}
+		.items { margin-top: 45px; }
+		.item { display: block; position: relative; margin-top: 0.5em; padding-left: 30px; }
+		.item b { font-weight: bold; }
+		.item::before { content: "";  position: absolute; top: 0.5lh; left: 0; 
+			transform: translateY(-50%) translateX(0%);
+			display: block;  width: 9px; height: 11px; border-radius: 10px; background: #000;
+		}
+		.work { margin-top: 85px; }
+		.work-icon { font-weight: 500; color: #ED5805; }
+		.work-title { margin-bottom: 20px; }
+		.work-comment { margin-bottom: 2em; }
+		.work-img { border-radius: 15px; border: 5px solid #abc; }
+		.a { font-weight: 900; color: #9B0AED; }
+	</style>
+	
+	<script>
+	</script>
+</head>
+<body>
+	<content class="content">
+		<main class="segment">
+		
+			<div class="title-upper-name"> Алексей Квартус </div>
+			
+			<br><br>
+			<div class="title-h1"> 
+				FullStack/ <br>
+				WebGL <br> 
+				Разработчик 
+			</div>
+			<br><br><br><br>
+			
+			<div class="items">
+				<div class="title-h3"> Общая информация </div>
+				<item class="item"> <b> Контактый телеграм:</b> @WEBGL_1_2 </item>
+				<item class="item"> <b> Локация:</b> Новосибирск (МСК+4) </item>
+				<item class="item"> <b> Образование:</b> высшее, НГУ, Физический Факультет, 2009 </item>
+				<item class="item"> <b> Английский:</b> B1 (Intermediate) </item>
+				<item class="item"> <b> Опыт в АйТи:</b> 15 лет </item>
+				<item class="item"> <b> Всего реализовано проектов:</b> 60+ </item>
+			</div>
+			
+			<div class="items">
+				<div class="title-h3"> Мягкие навыки (Soft Skills): </div>
+				<div class="item"> Объяснять сложное простыми словами. </div>
+				<div class="item"> Формировать тех. задание. </div>
+				<div class="item"> Выбирать оптимальные технологии. </div>
+				<div class="item"> Создавать структуру проекта. </div>
+				<div class="item"> Определять очерёдность реализации. </div>
+				<div class="item"> Поддерживать код в рабочем состоянии. </div>
+				<div class="item"> Предлагать идеи, концепции, архитектуру. </div>
+				<div class="item"> Развивать проект итеративно. </div>
+			</div>
+			
+			<div class="items">
+				<div class="title-h3"> Веб/Вёрстка (Frontend, 6 лет): </div>
+				<div class="item"> <b> Основное: </b> Vue.Js, Чистый JS, HTML5, CSS+, Flexbox </div>
+				<div class="item"> <b> 3D: </b> Three.JS, Pixi.JS, Чистый WebGL, Свои GLSL шейдеры. </div>
+				<div class="item"> <b> Анимация: </b> GSAP, ScrollTrigger, Parallax </div>
+				<div class="item"> <b> Другие библиотеки: </b> React.JS, Alpine.JS, Angular.JS, Aurelia.JS </div>
+			</div>
+			
+			<div class="items">
+				<div class="title-h3"> Веб/Серверное программирование (Backend, 6 лет): </div>
+				<div class="item"> <b> Backend: </b> Laravel, Чистый PHP. </div>
+				<div class="item"> <b> Базы данных: </b> MySQL, SqLite, PDO, Lara/Eloquent, чистый SQL. </div>
+				<div class="item"> <b> DevOps: </b> VPS Ubuntu, Apache2, Git, Continuous integration </div>
+			</div>
+			
+			<div class="items">
+				<div class="title-h3"> Windows/Linux (4 года): </div>
+				<div class="item"> C, C++, C# </div>
+				<div class="item"> OpenGL, Direct3D, DirectShow </div>
+				<div class="item"> Ubuntu, Fedore Core, Mint </div>
+			</div>
+
+			<!----------------------------------------------------------------->			
+			<div class="work">
+				<div class="work-icon"> WebGL </div>
+				<div class="work-title title-h2"> Оптимизация меша </div>
+				<div class="work-comment"> 
+					Написание своего алгоритма оптимизации меша. JavaScript, WebGL. 
+					<a class="a" href="./works/mesh_optim/" target="_blank"> Открыть &rarr; </a>
+				</div>
+				<img class="work-img" src="./img/mesh_optim.png">
+			</div>
+			
+			<!----------------------------------------------------------------->			
+			<div class="work">
+				<div class="work-icon"> WebGL </div>
+				<div class="work-title title-h2"> По-воксельная анимация </div>
+				<div class="work-comment"> 
+					Написание по-воксельной анимации. JavaScript, WebGL. 
+					<a class="a" href="./works/voxel_hit/" target="_blank"> Открыть &rarr; </a>
+				</div>
+				<img class="work-img" src="./img/voxel_hit_0.png">
+			</div>
+			
+			<!----------------------------------------------------------------->			
+			<div class="work">
+				<div class="work-icon"> WebGL </div>
+				<div class="work-title title-h2"> По-воксельная анимация 2 </div>
+				<div class="work-comment"> 
+					Написание по-воксельной анимации. JavaScript, WebGL. 
+					
+					<a class="a" href="./works/voxel_hit/?file=spaceship_1" target="_blank"> Spaceship </a>,
+					<a class="a" href="./works/voxel_hit/?file=longtruck" target="_blank"> Longtruck </a>,
+					<a class="a" href="./works/voxel_hit/?file=scooter" target="_blank"> Scooter </a>,
+					<a class="a" href="./works/voxel_hit/?file=market" target="_blank"> Market </a>,
+					<a class="a" href="./works/voxel_hit/?file=tallbuilding01" target="_blank"> Tallbuilding </a>,
+					<a class="a" href="./works/voxel_hit/?file=jeepgrandwagoneer" target="_blank"> Jeep </a>
+				</div>
+				<img class="work-img" src="./img/voxel_hit_1.png">
+			</div>
+			
+			<!----------------------------------------------------------------->			
+			<div class="work">
+				<div class="work-icon"> WebGL </div>
+				<div class="work-title title-h2"> Low-poly ландшафт </div>
+				<div class="work-comment"> 
+					JavaScript, WebGL.
+					<a class="a" href="./works/terrain_lowpoly/" target="_blank"> Terrain Lowpoly </a>
+				</div>
+				<img class="work-img" src="./img/terrain_lowpoly.png">
+			</div>
+			
+			<!----------------------------------------------------------------->			
+			<div class="work">
+				<div class="work-icon"> WebGL </div>
+				<div class="work-title title-h2"> Бесконечный ландшафт </div>
+				<div class="work-comment"> 
+					Генерация и движение по ландшафту по шуму Перлина. 
+					Используется один меш: меняются сами вершины.
+					Подход позволяют делать плавную адаптивную детализацию при приближении к наблюдателю.
+					JavaScript, WebGL. 
+					
+					<a class="a" href="./works/terrain_flight/" target="_blank"> Terrain Flight </a>
+				</div>
+				<img class="work-img" src="./img/terrain_flight.png">
+			</div>
+			
+			<!----------------------------------------------------------------->			
+			<div class="work">
+				<div class="work-icon"> GSAP, ScrollTrigger, JS, HTML5, CSS </div>
+				<div class="work-title title-h2"> Поэкранный скрол GSAP </div>
+				<div class="work-comment"> 
+					GSAP плюс ScrollTrigger плюс Параллакс плюс Поэкранный скрол.
+					
+					<a class="a" href="./works/snap/snap_scroll/" target="_blank"> Открыть </a>
+				</div>
+				<img class="work-img" src="./img/snap_0.png">
+			</div>
+			
+			<!----------------------------------------------------------------->			
+			<div class="work">
+				<div class="work-icon"> GSAP, ScrollTrigger, JS, HTML5, CSS </div>
+				<div class="work-title title-h2"> Поэкранный скрол GSAP 2 </div>
+				<div class="work-comment"> 
+					GSAP плюс ScrollTrigger плюс Параллакс плюс Поэкранный скрол.
+					
+					<a class="a" href="./works/snap/snap_juice/" target="_blank"> Суши </a> &bull;
+					<a class="a" href="./works/snap/snap_smoothie/" target="_blank"> Смузи </a> &bull;
+					<a class="a" href="./works/snap/snap_flowers/" target="_blank"> Цветы </a> &bull;
+					<a class="a" href="./works/snap/snap_house/" target="_blank"> Капсулы </a>
+				</div>
+				<img class="work-img" src="./img/snap_1.png">
+			</div>
+			
+			<!----------------------------------------------------------------->			
+			<div class="work">
+				<div class="work-icon"> JS, Алгоритмы </div>
+				<div class="work-title title-h2"> Сложный поиск путей </div>
+				<div class="work-comment"> 
+					Алгорим быстрого поиска в ситуации когда есть: множество юнитов * множество целей * множество точек возврата. JavaScript.
+					Сложность алгоритма _линейная_!
+					
+					<a class="a" href="./works/food_field/" target="_blank"> Открыть </a>
+				</div>
+				<img class="work-img" src="./img/food_field.png">
+			</div>
+			
+			<!----------------------------------------------------------------->			
+			<div class="work">
+				<div class="work-icon"> Pixi.js </div>
+				<div class="work-title title-h2"> Анимация через фильтры Pixi.js </div>
+				<div class="work-comment"> 
+					В анимации две фазы: 1 открытие квадрантов, 2 смерч. Pixi.js, WebGL, JavaScript.
+					
+					<a class="a" href="./works/turbulence/" target="_blank"> Открыть </a>
+				</div>
+				<img class="work-img" src="./img/turbulence.png">
+			</div>
+			
+			<!----------------------------------------------------------------->			
+			<div class="work">
+				<div class="work-icon"> Three.js, GLSL </div>
+				<div class="work-title title-h2"> Свои шейдеры </div>
+				<div class="work-comment"> 
+					Это полноценное 3D. Свои шайдеры. Three.js, GLSL.
+					<a class="a" href="./works/sun_fire/" target="_blank"> Открыть </a>
+				</div>
+				<img class="work-img" src="./img/sun_fire.png">
+			</div>
+
+			<!----------------------------------------------------------------->
+			<div class="work">
+				<div class="work-icon"> PHP, SQL, JS, HTML5, CSS, OpenStreetMap </div>
+				<div class="work-title title-h2"> Система объявлений на карте </div>
+				<div class="work-comment"> 
+					Создание системы объявлений на карте. Вёрстка, BackEnd. PHP, JavaScript, OpenStreetMap.
+					<a class="a" href="./works/karta/" target="_blank"> Открыть </a>
+				</div>
+				<img class="work-img" src="./img/karta.png">
+			</div>
+
+			<!----------------------------------------------------------------->
+			<div class="work">
+				<div class="work-icon"> JS, HTML5, CSS </div>
+				<div class="work-title title-h2"> Spin Slider </div>
+				<div class="work-comment"> 
+					Создание слайдера. JavaScript.
+					<a class="a" href="./works/spin_slider/" target="_blank"> Кэмпинг </a> &bull;
+					<a class="a" href="./works/spin_slider/?file=coffeeshop" target="_blank"> Кофешоп </a> &bull;
+					<a class="a" href="./works/spin_slider/?file=sushi" target="_blank"> Суши </a>
+				</div>
+				<img class="work-img" src="./img/spin_slider.png">
+			</div>
+
+			<!----------------------------------------------------------------->
+			<div class="work">
+				<div class="work-icon"> JS </div>
+				<div class="work-title title-h2"> Реактивная библиотека </div>
+				<div class="work-comment"> 
+					Создание реактивной библиотеки с нуля. JavaScript.
+					<a class="a" href="./works/reactive_lib/" target="_blank"> Открыть </a>
+				</div>
+				<img class="work-img" src="./img/reactive_lib.png">
+			</div>
+
+			<br><br><br><br>
+			Контактый телеграм: @WEBGL_1_2
+		</main>
+	</content>
+</body>
+</html>
